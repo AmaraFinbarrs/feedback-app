@@ -1,6 +1,14 @@
+import Header from "./components/Header"
+import FeedbackItem from "./components/FeedbackItem"
+
 function App(){
   return (
-    <h1>Hello World!</h1>
+    <>
+      <Header/>
+      <div className="constainer">
+        <FeedbackItem/>
+      </div>
+    </>
   )
 }
 
