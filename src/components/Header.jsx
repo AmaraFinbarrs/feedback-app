@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-function Header({ text, bgColor, textColor }) {
+function Header({ text = 'Feedback UI', bgColor='rgba(0,0,0,0.4)', textColor='#ff6a95' }) {
   const headerStyles = {
     backgroundColor: bgColor,
     color: textColor,
@@ -13,12 +13,6 @@ function Header({ text, bgColor, textColor }) {
       </div>
     </header>
   )
-}
-
-Header.defaultProps = {
-  text: 'Feedback UI',
-  bgColor: 'rgba(0,0,0,0.4)',
-  textColor: '#ff6a95',
 }
 
 Header.propTypes = {
